@@ -8,8 +8,11 @@ const dbConnection = async () => {
             useUnifiedTopology: true,
             
         });
+        
+        console.log(process.env.DB_CNN);
 
         console.log('DB is connected');
+        
     } catch (error) {
         console.log(error);
         throw new Error('Error a la hora de inicializar BD');
